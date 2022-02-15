@@ -11,11 +11,13 @@
 
 <body>
   <div class="login">
-    <h1>What's your name?</h1>
-    <input type="text" name="" id="">
-    <button>Enter</button>
+    <h1 class="askName">What's your name?</h1>
+    <input type="text" class="inputName" minlength="1" maxlength="15" required>
+    <div>
+      <button class="enterBtn">Enter</button>
+    </div>
   </div>
-  <div class="main">
+  <div class="main hidden">
     <h1>Good morning</h1>
     <div class="buttons">
       <button id="calculator"></button>
@@ -27,8 +29,8 @@
     <div class="todo">
       <h3>to-do</h3>
     </div>
+    <h4>quotes</h4>
   </div>
-  <h4>quotes</h4>
   <script src="app.js"></script>
 </body>
 

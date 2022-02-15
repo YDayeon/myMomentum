@@ -1,0 +1,40 @@
+:root {
+  --font-size-large: 60px;
+  --font-size-medium: 45px;
+  --font-size-small: 30px;
+}
+
+/* log-in page */
+.login {
+  text-align: center;
+}
+
+.askName {
+  margin-top: 200px;
+  font-size: var(--font-size-large);
+}
+
+.inputName {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid purple;
+  width: 500px;
+}
+
+.inputName:focus {
+  outline: none;
+  border-bottom: 1px solid purple;
+  width: 500px;
+}
+
+.enterBtn {
+  margin-top: 15px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: var(--font-size-small);
+}
+
+/* main page */
+.hidden {
+  display: none;
+}

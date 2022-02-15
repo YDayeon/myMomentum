@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="login">
+  <div class="login hidden">
     <h1 class="askName">What's your name?</h1>
     <form id="loginForm">
       <input type="text" class="inputName" minlength="1" maxlength="15" required>
@@ -19,15 +19,16 @@
       </div>
     </form>
   </div>
-  <div class="main hidden">
+  <div class="main">
     <h1 class="greeting"></h1>
     <div class="buttons">
-      <button class="button" id="calculator">1</button>
-      <button class="button" id="map">2</button>
-      <button class="button" id="weather">3</button>
-      <button class="button" id="memo">4</button>
+      <button class="button" id="map"><img id="map" class="btnImg" src="imgs/weather.png" alt="weather"></button>
+      <button class="button" id="calculator"><img id="calculator" class="btnImg" src="imgs/calculator.png"
+          alt="calculator"></button>
+      <button class="button" id="weather"><img id="weather" class="btnImg" src="imgs/map.png" alt="map"></button>
+      <button class="button" id="memo"><img id="memo" class="btnImg" src="imgs/memo.png" alt="memo"></button>
     </div>
-    <div class="view">blabla</div>
+    <div class="screen">blabla</div>
     <div class="todo">
       <h3>to-do</h3>
     </div>

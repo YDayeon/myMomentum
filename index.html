@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="login hidden">
+  <div class="login">
     <h1 class="askName">What's your name?</h1>
     <form id="loginForm">
       <input type="text" class="inputName" minlength="1" maxlength="15" required>
@@ -19,7 +19,7 @@
       </div>
     </form>
   </div>
-  <div class="main">
+  <div class="main hidden">
     <h1 class="greeting"></h1>
     <div class="buttons">
       <button class="button" id="map"><img id="map" class="btnImg" src="imgs/weather.png" alt="weather"></button>
@@ -35,7 +35,8 @@
     <h4 class="quote">quotes</h4>
   </div>
 
-  <script src="app.js"></script>
+  <script src="src/changePage.js"></script>
+  <script src="src/changeScreen.js"></script>
 </body>
 
 </html>

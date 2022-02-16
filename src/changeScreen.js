@@ -1,16 +1,14 @@
 const buttons = document.querySelector('.buttons');
-const screen = document.querySelector('.screen');
+const screen = document.querySelector('.screens');
+const screens = document.querySelectorAll('.screen');
+
+const HIDDENCLASS = 'hidden';
+[...screens].map((x) => x.classList.add(HIDDENCLASS));
+const idObject = new Map();
+
 function handleScreen(event) {
   const subject = event.target.id;
-  if (subject === 'calculator') {
-    screen.style.backgroundColor = 'red';
-  } else if (subject === 'map') {
-    screen.style.backgroundColor = 'orange';
-  } else if (subject === 'weather') {
-    screen.style.backgroundColor = 'green';
-  } else if (subject === 'memo') {
-    screen.style.backgroundColor = 'blue';
-  }
+  // 해당 버튼을 클릭하면 해당 화면 등장
 }
 
 buttons.addEventListener('click', handleScreen);

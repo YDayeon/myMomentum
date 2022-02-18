@@ -124,6 +124,11 @@
   margin-right: 30px;
 }
 
+.delete_btn {
+  background-color: transparent;
+  border: none;
+}
+
 .quote {
   text-align: end;
   margin-top: 50px;

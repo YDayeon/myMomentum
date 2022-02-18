@@ -19,35 +19,69 @@
       </div>
     </form>
   </div>
-  <div class="main hidden">
-    <h1 class="greeting"></h1>
+  <div class="home hidden">
+    <header class="greeting"></header>
     <div class="buttons">
-      <button class="button" id="timer"><img id="timer" class="btnImg" src="imgs/timer.png" alt="time"></button>
-      <button class="button" id="map"><img id="map" class="btnImg" src="imgs/weather.png" alt="weather"></button>
+      <button class="button" id="time"><img id="time" class="btnImg" src="imgs/timer.png" alt="time"></button>
+      <button class="button" id="weather"><img id="weather" class="btnImg" src="imgs/weather.png"
+          alt="weather"></button>
       <button class="button" id="calculator"><img id="calculator" class="btnImg" src="imgs/calculator.png"
           alt="calculator"></button>
-      <button class="button" id="weather"><img id="weather" class="btnImg" src="imgs/map.png" alt="map"></button>
-      <button class="button" id="memo"><img id="memo" class="btnImg" src="imgs/memo.png" alt="memo"></button>
+      <button class="button" id="map"><img id="map" class="btnImg" src="imgs/map.png" alt="map"></button>
     </div>
-    <div class="screens">
-      <div class="screen" id="clockScreen">hi</div>
-      <div class="screen" id="weatherScreen">안녕</div>
-      <div class="screen" id="calculatorScreen">hola</div>
-      <div class="screen" id="mapScreen">봉쥬르</div>
-      <div class="screen" id="memoScreen">gday</div>
+    <div class="main">
+      <div class="screen time_screen hidden" id="time">
+        <div id="clock"></div>
+        <hr>
+        <div id="timer">
+          <span>00:00:00</span>
+          <div class="timer_btn">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+            <button id="reset">RESET</button>
+          </div>
+        </div>
+        <hr>
+        <div id="dday">D-Day</div>
+      </div>
+      <div class="screen weather_screen hidden" id="weather">안녕</div>
+      <div class="screen calculator_screen" id="calculator">
+        <div class="result"></div>
+        <div class="container">
+          <button class="num" id="1">1</button>
+          <button class="num" id="2">2</button>
+          <button class="num" id="3">3</button>
+          <button class="operation" id="+">+</button>
+          <button class="num" id="4">4</button>
+          <button class="num" id="5">5</button>
+          <button class="num" id="6">6</button>
+          <button class="operation" id="-">-</button>
+          <button class="num" id="7">7</button>
+          <button class="num" id="8">8</button>
+          <button class="num" id="9">9</button>
+          <button class="operation" id="*">*</button>
+          <button class="operation" id="C">C</button>
+          <button class="num" id="0">0</button>
+          <button id="calculate">=</button>
+          <button class="operation" id="/">/</button>
+        </div>
+      </div>
+      <div class="screen map_screen hidden" id="map">봉쥬르</div>
     </div>
-    <div class="todo">
+    <aside class="todo">
       <form id="todo-form">
         <input type="text" placeholder="Write a to-do and Press Enter" required>
       </form>
       <ul id="todo-list"></ul>
-    </div>
-    <h4 class="quote">quotes</h4>
+    </aside>
+    <footer class="quote">quotes</footer>
   </div>
 
   <script src="JS/changePage.js"></script>
   <script src="JS/changeScreen.js"></script>
   <script src="JS/todo.js"></script>
+  <script src="JS/time.js"></script>
+  <script src="JS/calculate.js"></script>
 </body>
 
 </html>

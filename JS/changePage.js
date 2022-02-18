@@ -2,7 +2,7 @@
 
 const loginForm = document.querySelector('#loginForm');
 const loginPage = document.querySelector('.login');
-const mainPage = document.querySelector('.main');
+const homePage = document.querySelector('.home');
 const myName = document.querySelector('.inputName');
 const greeting = document.querySelector('.greeting');
 
@@ -11,7 +11,7 @@ const HIDDEN = 'hidden';
 function hidden() {
   loginPage.classList.add(HIDDEN);
   greeting.innerText = `Have a good day ${localStorage.getItem(USERNAME)}`;
-  mainPage.classList.remove(HIDDEN);
+  homePage.classList.remove(HIDDEN);
 }
 
 function openMain(event) {

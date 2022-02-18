@@ -41,7 +41,7 @@
 }
 
 /* main page */
-.main {
+.home {
   position: absolute;
   left: 0;
   top: 0%;
@@ -53,7 +53,7 @@
   background-color: lightblue;
 }
 
-.main.hidden {
+.home.hidden {
   display: none;
 }
 
@@ -89,31 +89,70 @@
   height: 80%;
 }
 
-.screens {
+.main {
   grid-row: 2/3;
   grid-column: 2/3;
   margin-top: 20px;
   width: 400px;
 }
 
-#calculatorScreen {
-  background-color: antiquewhite;
+.screen {
+  height: 420px;
 }
 
-#weatherScreen {
-  background-color: saddlebrown;
+/* screens */
+.time_screen {
+  background-color: palevioletred;
 }
 
-#calculatorScreen {
-  background-color: cadetblue;
+.weather_screen {
+  background-color: sandybrown;
 }
 
-#mapScreen {
-  background-color: lawngreen;
+.calculator_screen {
+  background-color: rgb(181, 181, 255);
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
-#memoScreen {
-  background-color: salmon;
+.result {
+  background-color: indianred;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 60px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+}
+
+.num {
+  width: 60px;
+  height: 60px;
+  background-color: gold;
+  margin: 5px;
+}
+
+.operation {
+  width: 60px;
+  height: 60px;
+  background-color: royalblue;
+  margin: 5px;
+}
+
+#calculate {
+  width: 60px;
+  height: 60px;
+  background-color: hotpink;
+  margin: 5px;
+}
+.map_screen {
+  background-color: wheat;
+}
+
+.memo_screen {
+  background-color: khaki;
 }
 
 .todo {

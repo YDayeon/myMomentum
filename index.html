@@ -13,6 +13,7 @@
   <div class="login">
     <h1 class="askName">What's your name?</h1>
     <form id="loginForm">
+      <span id="im">I'm </span>
       <input type="text" class="inputName" minlength="1" maxlength="15" required>
       <div>
         <button class="enterBtn">Enter</button>
@@ -44,7 +45,24 @@
         <hr>
         <div id="dday">D-Day</div>
       </div>
-      <div class="screen weather_screen hidden" id="weather">안녕</div>
+      <div class="screen weather_screen hidden" id="weather">
+        <div class="weather_head">
+          <img class="weather_icon" />
+          <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
+          <img src="imgs/humidity.png" class="head_icon" /><span></span>
+        </div>
+        <div class="temperature">
+          <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
+          <h4></h4>
+          <h4></h4>
+          <h4></h4>
+        </div>
+        <div class="wind">
+          <img class="instruction_icon" src="imgs/wind.png" alt="">
+          <h4></h4>
+          <h4></h4>
+        </div>
+      </div>
       <div class="screen calculator_screen" id="calculator">
         <div class="result"></div>
         <div class="container">
@@ -59,14 +77,16 @@
           <button class="num" id="7">7</button>
           <button class="num" id="8">8</button>
           <button class="num" id="9">9</button>
-          <button class="operation" id="*">*</button>
+          <button class="operation" id="×">×</button>
           <button class="operation" id="C">C</button>
           <button class="num" id="0">0</button>
           <button id="calculate">=</button>
-          <button class="operation" id="/">/</button>
+          <button class="operation" id="÷">÷</button>
         </div>
       </div>
-      <div class="screen map_screen hidden" id="map">봉쥬르</div>
+      <div class="screen map_screen hidden" id="map">
+        <div id="map_view"></div>
+      </div>
     </div>
     <aside class="todo">
       <form id="todo-form">
@@ -82,6 +102,9 @@
   <script src="JS/todo.js"></script>
   <script src="JS/time.js"></script>
   <script src="JS/calculate.js"></script>
+  <script src="JS/weather.js"></script>
+  <script src="JS/map.js"></script>
+  <script src="JS/background.js"></script>
 </body>
 
 </html>

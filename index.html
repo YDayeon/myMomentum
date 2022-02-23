@@ -31,15 +31,15 @@
       <button class="button" id="map"><img id="map" class="btnImg" src="imgs/map.png" alt="map"></button>
     </div>
     <div class="main">
-      <div class="screen time_screen hidden" id="time">
+      <div class="screen time_screen" id="time">
         <div id="clock"></div>
         <hr>
         <div id="timer">
-          <span>00:00:00</span>
-          <div class="timer_btn">
-            <button id="start">START</button>
-            <button id="stop">STOP</button>
-            <button id="reset">RESET</button>
+          <div id="timer_time">00 : 00 : 00</div>
+          <div class="timer_btns">
+            <button class="timer_btn" id="start">START</button>
+            <button class="timer_btn" id="stop">STOP</button>
+            <button class="timer_btn" id="reset">RESET</button>
           </div>
         </div>
         <hr>
@@ -63,7 +63,7 @@
           <h4></h4>
         </div>
       </div>
-      <div class="screen calculator_screen" id="calculator">
+      <div class="screen calculator_screen hidden" id="calculator">
         <div class="resultContainer">
           <div id="formula"></div>
           <div id="result"></div>

@@ -17,7 +17,7 @@ now();
 setInterval(now, 1000);
 
 // timer
-const timer = document.querySelector('#timer span');
+const timer = document.querySelector('#timer_time');
 const btns = document.querySelector('.timer_btn');
 let hours = 0;
 let minutes = 0;

@@ -2,6 +2,9 @@
   --font-size-large: 60px;
   --font-size-medium: 45px;
   --font-size-small: 30px;
+
+  --font-color-purple: rgb(148, 97, 214);
+  --font-color-orange: rgb(253, 190, 107);
 }
 
 .hidden {
@@ -54,7 +57,6 @@
   display: grid;
   grid-template-rows: 80px 440px auto;
   grid-template-columns: 3fr 4fr 3fr;
-  background-color: lightblue;
 }
 
 .home.hidden {
@@ -106,7 +108,58 @@
 
 /* screens */
 .time_screen {
-  background-color: palevioletred;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+#timer {
+  display: flex;
+}
+
+#clock {
+  text-align: center;
+  font-size: 50px;
+  color: var(--font-color-purple);
+  font-weight: 800;
+  text-shadow: 3px 3px 3px var(--font-color-orange);
+}
+
+#timer_time {
+  margin-top: 10px;
+  padding-left: 50px;
+  font-size: 40px;
+}
+
+.timer_btns {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 5px;
+  width: 80px;
+}
+
+.timer_btn {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.5;
+  color: white;
+}
+
+.timer_btn:hover {
+  /* transform: scale(1.05); */
+  opacity: 1;
+}
+
+#start {
+  background-color: skyblue;
+}
+
+#stop {
+  background-color: red;
+}
+
+#reset {
+  background-color: black;
 }
 
 .weather_screen {

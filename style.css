@@ -155,11 +155,19 @@ h4 {
   padding-left: 50px;
 }
 
-.result {
+.resultContainer {
   background-color: indianred;
   margin-bottom: 20px;
+  padding: 10px 10px 0px 10px;
   width: 300px;
   height: 60px;
+  color: white;
+}
+
+#result {
+  margin-top: 10px;
+  color: orange;
+  text-align: end;
 }
 
 .container {
@@ -190,6 +198,7 @@ h4 {
   margin: 5px;
   font-size: 20px;
 }
+
 .map_screen {
   background-color: wheat;
 }

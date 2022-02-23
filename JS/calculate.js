@@ -1,13 +1,14 @@
 const calculator = document.querySelector('.container');
 const inputValue = calculator.querySelectorAll('input');
-const result = document.querySelector('.result');
+const formula = document.querySelector('#formula');
+const result = document.querySelector('#result');
 let resultValue = '';
 let stackArr = [];
 let input = '';
 
 const operatorMap = new Map();
-operatorMap.set('×', 0);
-operatorMap.set('÷', 0);
+operatorMap.set('×', 2);
+operatorMap.set('÷', 2);
 operatorMap.set('+', 1);
 operatorMap.set('-', 1);
 
@@ -18,11 +19,11 @@ function backwardOperator() {
   while (i < stackArr.length) {
     let x = stackArr[i];
     if (x === '+' || x === '-' || x === '×' || x === '÷') {
-      if (operatorStack.length <= 1) {
+      if (operatorStack.length === 0) {
         operatorStack.push(x);
         i++;
       } else if (
-        operatorMap.get(operatorStack[operatorStack.length - 1]) <
+        operatorMap.get(operatorStack[operatorStack.length - 1]) >=
         operatorMap.get(x)
       ) {
         backwardStack.push(operatorStack.pop());
@@ -37,10 +38,30 @@ function backwardOperator() {
   }
   const backwardOperatorStack = backwardStack.concat(operatorStack.reverse());
   console.log(backwardOperatorStack);
+  calculateNumber(backwardOperatorStack);
 }
 
-function calculateAll(all) {
-  console.log(all);
+function calculateNumber(backwardOperatorStack) {
+  let numberStack = [];
+  for (const x of backwardOperatorStack) {
+    if (x === '+' || x === '-' || x === '×' || x === '÷') {
+      const first = parseFloat(numberStack.pop());
+      const second = parseFloat(numberStack.pop());
+      if (x === '+') {
+        numberStack.push(second + first);
+      } else if (x === '-') {
+        numberStack.push(second - first);
+      } else if (x === '×') {
+        numberStack.push(second * first);
+      } else if (x === '÷') {
+        numberStack.push(second / first);
+      }
+    } else {
+      numberStack.push(x);
+    }
+  }
+  result.innerHTML = numberStack[0];
+  console.log(numberStack);
 }
 
 function handleCalculator(event) {
@@ -48,22 +69,23 @@ function handleCalculator(event) {
   const inputID = event.target.id;
   const inputClass = event.target.classList[0];
   if (inputID === 'calculate') {
-    calculateAll(resultValue);
+    // calculateAll(resultValue);
     stackArr.push(input);
     backwardOperator();
   } else if (inputID === 'C') {
     stackArr = [];
     resultValue = '';
-    result.innerHTML = resultValue;
+    formula.innerHTML = resultValue;
+    result.innerHTML = '';
   } else if (inputClass === 'num') {
     resultValue += inputID;
     input += inputID;
-    result.innerHTML = resultValue;
+    formula.innerHTML = resultValue;
   } else if (inputClass === 'operation') {
     resultValue += inputID;
     stackArr.push(input, inputID);
     input = '';
-    result.innerHTML = resultValue;
+    formula.innerHTML = resultValue;
   }
 }
 

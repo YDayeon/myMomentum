@@ -48,6 +48,12 @@
 }
 
 /* main page */
+hr {
+  width: 90%;
+  border: none;
+  border-top: 1px solid white;
+}
+
 .home {
   position: absolute;
   left: 0;
@@ -252,21 +258,12 @@ h4 {
   font-size: 20px;
 }
 
-.map_screen {
-  background-color: wheat;
-}
-
-#map_view {
-  width: 500px;
-  height: 400px;
-}
-
-.memo_screen {
-  background-color: khaki;
+.paint_screen {
+  background-color: white;
 }
 
 .todo {
-  background-color: yellow;
+  background-color: lightcoral;
   grid-row: 1/3;
   grid-column: 3/4;
   margin-top: 50px;

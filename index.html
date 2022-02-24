@@ -28,7 +28,7 @@
           alt="weather"></button>
       <button class="button" id="calculator"><img id="calculator" class="btnImg" src="imgs/calculator.png"
           alt="calculator"></button>
-      <button class="button" id="map"><img id="map" class="btnImg" src="imgs/map.png" alt="map"></button>
+      <button class="button" id="paint"><img id="paint" class="btnImg" src="imgs/paint.png" alt="paint"></button>
     </div>
     <div class="main">
       <div class="screen time_screen" id="time">
@@ -51,12 +51,14 @@
           <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
           <img src="imgs/humidity.png" class="head_icon" /><span></span>
         </div>
+        <hr>
         <div class="temperature">
           <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
           <h4></h4>
           <h4></h4>
           <h4></h4>
         </div>
+        <hr>
         <div class="wind">
           <img class="instruction_icon" src="imgs/wind.png" alt="">
           <h4></h4>
@@ -87,8 +89,21 @@
           <button class="operation" id="÷">÷</button>
         </div>
       </div>
-      <div class="screen map_screen hidden" id="map">
-        <div id="map_view"></div>
+      <div class="screen paint_screen hidden" id="paint">
+        <canvas id="jsCanvas"></canvas>
+        <div class="controls">
+          <div class="controls_colors" id="jsColors">
+            <div class="controls__color" style="background-color:black"></div>
+            <div class="controls__color" style="background-color:white"></div>
+            <div class="controls__color" style="background-color:#ed3b3b"></div>
+            <div class="controls__color" style="background-color:#ff821c"></div>
+            <div class="controls__color" style="background-color:#ffdd1c"></div>
+            <div class="controls__color" style="background-color:#50d13d"></div>
+            <div class="controls__color" style="background-color:#5fa6ed"></div>
+            <div class="controls__color" style="background-color:#3558cc"></div>
+            <div class="controls__color" style="background-color:#6535cc"></div>
+          </div>
+        </div>
       </div>
     </div>
     <aside class="todo">
@@ -106,7 +121,6 @@
   <script src="JS/time.js"></script>
   <script src="JS/calculate.js"></script>
   <script src="JS/weather.js"></script>
-  <script src="JS/map.js"></script>
   <script src="JS/background.js"></script>
   <script src="JS/quotes.js"></script>
 </body>

@@ -117,6 +117,7 @@ hr {
   background-color: rgba(255, 255, 255, 0.322);
 }
 
+/* Time */
 #timer {
   display: flex;
 }
@@ -168,6 +169,7 @@ hr {
   background-color: black;
 }
 
+/* Weather */
 .weather_screen {
   background-color: rgba(0, 0, 0, 0.521);
   color: aliceblue;
@@ -208,6 +210,7 @@ h4 {
   margin: 10px auto 10px 20px;
 }
 
+/* Calculator */
 .calculator_screen {
   background-color: rgb(181, 181, 255);
   padding-top: 20px;
@@ -258,8 +261,42 @@ h4 {
   font-size: 20px;
 }
 
+/* Painter */
 .paint_screen {
+  border: 2px solid wheat;
+}
+
+.canvas {
+  width: 100%;
+  height: 380px;
   background-color: white;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls__btns {
+  cursor: pointer;
+}
+
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+
+.controls_colors {
+  display: flex;
+  gap: 10px;
+}
+
+.controls__color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
 .todo {

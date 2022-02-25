@@ -1,7 +1,9 @@
 const buttons = document.querySelector('.buttons');
+const clickButton = document.querySelector('.clicked');
 const main = document.querySelector('.main');
 const screens = document.querySelectorAll('.screen');
 
+let preButton = clickButton;
 const HIDDENCLASS = 'hidden';
 
 function handleScreen(event) {
@@ -9,6 +11,9 @@ function handleScreen(event) {
   [...screens].filter((x) => {
     if (x.id === event.target.id) {
       x.classList.remove(HIDDENCLASS);
+      preButton.classList.remove('clicked');
+      preButton = event.path[1];
+      event.path[1].classList.add('clicked');
     } else {
       x.classList.add(HIDDENCLASS);
     }

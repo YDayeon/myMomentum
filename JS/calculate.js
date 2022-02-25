@@ -37,7 +37,6 @@ function backwardOperator() {
     }
   }
   const backwardOperatorStack = backwardStack.concat(operatorStack.reverse());
-  console.log(backwardOperatorStack);
   calculateNumber(backwardOperatorStack);
 }
 

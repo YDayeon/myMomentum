@@ -3,6 +3,10 @@ CSS의 여러 기능(Grid)과 JavaScript를 이용한 여러 간단한 small pro
 스스로 구현해보고 싶었던 여러 기능들을 구현하는 데 중점을 두고 있는 프로젝트 (JavaScript 복습)
 ## 페이지 구성
 Login / Home
+## 프로젝트 목적
+1. 적절한 시맨틱 태그 활용
+2. CSS 기능 최대한 활용 (실습을 통한 이해)
+3. 여러 JavaScript 기능 사용
 ## 주요 기능
 1. Random background
 2. Log-in

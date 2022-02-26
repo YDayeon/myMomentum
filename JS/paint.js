@@ -49,6 +49,7 @@ function handleColorClick(event) {
   const color = event.target.style.backgroundColor;
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
+  document.querySelector('.cur__color').style.backgroundColor = color;
 }
 
 function handleRangeChange(event) {
@@ -59,10 +60,10 @@ function handleRangeChange(event) {
 function handleModeClick(event) {
   if (filling === true) {
     filling = false;
-    mode.innerHTML = 'FILL';
+    mode.querySelector('img').src = 'imgs/pen.png';
   } else {
     filling = true;
-    mode.innerHTML = 'PAINT';
+    mode.querySelector('img').src = 'imgs/fill.png';
   }
 }
 

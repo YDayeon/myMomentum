@@ -15,7 +15,6 @@ let currentDate = new Date(
   date.getMinutes,
   date.getSeconds
 );
-console.log(currentDate);
 
 function handleDday(event) {
   event.preventDefault();

@@ -4,12 +4,12 @@ const weatherIcon = weatherHead.querySelector('img');
 const headTem = weatherHead.querySelector('span:nth-child(3)');
 const headHum = weatherHead.querySelector('span:nth-child(5)');
 const temperature = document.querySelector('.temperature');
-const tempFeel = temperature.querySelector('h4:nth-child(2)');
-const tempMax = temperature.querySelector('h4:nth-child(3)');
-const tempMin = temperature.querySelector('h4:nth-child(4)');
+const tempFeel = temperature.querySelector('h4:nth-child(2) mark');
+const tempMax = temperature.querySelector('h4:nth-child(3) mark');
+const tempMin = temperature.querySelector('h4:nth-child(4) mark');
 const wind = document.querySelector('.wind');
-const windDeg = wind.querySelector('h4:nth-child(2)');
-const windSpeed = wind.querySelector('h4:nth-child(3)');
+const windDeg = wind.querySelector('h4:nth-child(2) mark');
+const windSpeed = wind.querySelector('h4:nth-child(3) mark');
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
@@ -57,11 +57,11 @@ function onGeoOk(position) {
       }
       headTem.innerHTML = `${temp}°C`;
       headHum.innerHTML = `${hum}%`;
-      tempFeel.innerHTML = `feels like ${feels_like}°C`;
-      tempMax.innerHTML = `max-temperature ${max}°C`;
-      tempMin.innerHTML = `min-temperature ${min}°C`;
-      windDeg.innerHTML = `deg ${deg}°`;
-      windSpeed.innerHTML = `speed ${speed} m/s`;
+      tempFeel.innerHTML = `${feels_like}°C`;
+      tempMax.innerHTML = `${max}°C`;
+      tempMin.innerHTML = `${min}°C`;
+      windDeg.innerHTML = `${deg}°`;
+      windSpeed.innerHTML = `${speed} m/s`;
     });
 }
 function onGeoError() {

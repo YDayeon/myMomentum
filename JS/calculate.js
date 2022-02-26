@@ -60,7 +60,6 @@ function calculateNumber(backwardOperatorStack) {
     }
   }
   result.innerHTML = numberStack[0];
-  console.log(numberStack);
 }
 
 function handleCalculator(event) {

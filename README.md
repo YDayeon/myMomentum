@@ -1,6 +1,8 @@
 # myMomentum
 CSS의 여러 기능(Grid)과 JavaScript를 이용한 여러 간단한 small project들을 합친 개인 프로젝트
 스스로 구현해보고 싶었던 여러 기능들을 구현하는 데 중점을 두고 있는 프로젝트 (JavaScript 복습)
+## Link
+https://ydayeon.github.io/myMomentum/
 ## 페이지 구성
 Login / Home
 ## 프로젝트 목적

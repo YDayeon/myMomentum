@@ -5,6 +5,9 @@
 
   --font-color-purple: rgb(148, 97, 214);
   --font-color-orange: rgb(253, 190, 107);
+  --font-color-blue: rgb(93, 190, 255);
+  --bg-color-white: #ffffff5e;
+  --bg-color-black: rgba(0, 0, 0, 0.788);
 }
 
 body {
@@ -137,11 +140,19 @@ hr {
 
 .screen {
   height: 420px;
+  background-color: var(--bg-color-white);
+  color: white;
 }
 
-/* screens */
-.time_screen {
-  background-color: rgba(255, 255, 255, 0.322);
+.screen__title {
+  height: 32px;
+  padding-top: 2px;
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--bg-color-black);
+  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
 }
 
 /* Time */
@@ -149,97 +160,129 @@ hr {
   display: flex;
 }
 
+.timer__img {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
 #clock {
   text-align: center;
-  font-size: 50px;
-  color: var(--font-color-purple);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 70px;
   font-weight: 800;
-  text-shadow: 3px 3px 3px var(--font-color-orange);
+  text-shadow: 3px 3px 3px var(--font-color-orange), -1px -1px 2px red;
 }
 
 #timer_time {
-  margin-top: 10px;
-  padding-left: 50px;
+  width: 200px;
+  padding-top: 15px;
+  padding-left: 30px;
   font-size: 40px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px black;
 }
 
 .timer_btns {
   display: flex;
-  flex-direction: column;
-  margin-left: 50px;
+  margin-top: 25px;
+  padding-left: 25px;
   gap: 5px;
-  width: 80px;
 }
 
 .timer_btn {
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border: none;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 2px black;
+}
+
+#start img {
+  width: 25px;
+  height: 25px;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+
+#stop img {
+  width: 25px;
+  height: 27px;
+  margin-top: 3px;
+}
+
+.reset {
+  width: 20px;
+  height: 20px;
   border-radius: 5px;
-  opacity: 0.5;
-  color: white;
+  background-color: red;
+  margin: auto;
 }
 
 .timer_btn:hover {
-  /* transform: scale(1.05); */
-  opacity: 1;
-}
-
-#start {
-  background-color: skyblue;
-}
-
-#stop {
-  background-color: red;
-}
-
-#reset {
-  background-color: black;
+  transform: scale(1.05);
 }
 
 /* Weather */
-.weather_screen {
-  background-color: rgba(0, 0, 0, 0.521);
-  color: aliceblue;
+#weather h1 {
+  text-align: center;
+  text-shadow: -1.5px -1.5px 2px var(--font-color-blue),
+    1.5px 1.5px 2px var(--font-color-purple);
+  margin: 0;
 }
 
 .weather_head {
   display: flex;
 }
 
-.head_icon {
+.weather_icon {
+  display: inline-block;
+  margin-top: 10px;
   margin-left: 30px;
-  margin-top: 35px;
+  width: 60px;
+  height: 60px;
+}
+
+.head_icon {
+  margin-left: 40px;
+  margin-top: 20px;
   width: 35px;
   height: 35px;
 }
 
 .weather_head span {
-  margin-top: 40px;
-  margin-left: 0px;
+  margin-top: 25px;
   font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-shadow: 1px 1px white;
 }
 
-.weather_icon {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
+.temperature__head {
+  background-color: var(--bg-color-black);
+  padding-left: 5px;
 }
 
 .instruction_icon {
-  margin: 20px auto 0px 10px;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
 }
 
 h4 {
-  margin: 10px auto 10px 20px;
+  margin: 15px 20px;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
+mark {
+  background-color: yellow;
 }
 
 /* Calculator */
 .calculator_screen {
-  background-color: rgb(181, 181, 255);
   padding-top: 20px;
   padding-left: 50px;
 }

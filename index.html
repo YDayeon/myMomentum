@@ -32,38 +32,72 @@
     </div>
     <div class="main">
       <div class="screen time_screen hidden" id="time">
+        <div id="Dday" class="hidden">
+          <div class="add__Dday">
+            <form>
+              <span>D-day</span>
+              <label for="what">What?</label>
+              <input required type="text" placeholder="are you waiting for">
+              <label for="when">When?</label>
+              <input required type="number" id="input_year" min="2022" max="2022">/
+              <input required type="number" id="input_month" min="1" max="12">/
+              <input required type="number" id="input_day" min="1" max="31">
+              <button>Count</button>
+            </form>
+          </div>
+          <div class="Until__Dday hidden">
+            <h2>Day until <span>ChristMas</span></h2>
+            <h1>D-55</h1>
+          </div>
+          <div class="D_day hidden">
+            <h2>D-day</h2>
+            <h3>Today is</h3>
+            <h1>ChristMas</h1>
+          </div>
+        </div>
         <div id="clock"></div>
-        <hr>
+        <!-- <hr> -->
+        <div class="screen__title">
+          <img class="timer__img" src="imgs/settimer.png" alt="timer">
+          <div>Timer</div>
+        </div>
         <div id="timer">
           <div id="timer_time">00 : 00 : 00</div>
           <div class="timer_btns">
-            <button class="timer_btn" id="start">START</button>
-            <button class="timer_btn" id="stop">STOP</button>
-            <button class="timer_btn" id="reset">RESET</button>
+            <button class="timer_btn" id="start"><img id="start" src="imgs/run.png" alt="run"></button>
+            <button class="timer_btn" id="stop"><img id="stop" src="imgs/stop.png" alt="stop"></button>
+            <button class="timer_btn" id="reset">
+              <div id="reset" class="reset"></div>
+            </button>
           </div>
         </div>
-        <hr>
-        <div id="dday">D-Day</div>
       </div>
-      <div class="screen weather_screen hidden" id="weather">
-        <div class="weather_head">
-          <img class="weather_icon" />
-          <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
-          <img src="imgs/humidity.png" class="head_icon" /><span></span>
-        </div>
-        <hr>
-        <div class="temperature">
-          <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
-          <h4></h4>
-          <h4></h4>
-          <h4></h4>
-        </div>
-        <hr>
-        <div class="wind">
-          <img class="instruction_icon" src="imgs/wind.png" alt="">
-          <h4></h4>
-          <h4></h4>
-        </div>
+      <div class="screen weather_screen" id="weather">
+        <h1>Now weather</h2>
+          <div class="weather_head">
+            <img class="weather_icon" />
+            <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
+            <img src="imgs/humidity.png" class="head_icon" /><span></span>
+          </div>
+          <div class="temperature">
+            <div class="screen__title">
+              <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
+              Temperature
+            </div>
+            <h4></h4>
+            <h4></h4>
+            <h4></h4>
+          </div>
+          <div class="wind">
+            <div class="screen__title">
+              <img class="instruction_icon" src="imgs/wind.png" alt="">
+              <div> Wind</div>
+            </div>
+            <h4></h4>
+            <h4></h4>
+            <h4>cold<mark>yes</mark>
+            </h4>
+          </div>
       </div>
       <div class="screen calculator_screen hidden" id="calculator">
         <div class="resultContainer">
@@ -89,7 +123,7 @@
           <button class="operation" id="÷">÷</button>
         </div>
       </div>
-      <div class="screen paint_screen" id="paint">
+      <div class="screen paint_screen hidden" id="paint">
         <canvas id="jsCanvas" class="canvas"></canvas>
         <div class="controls">
           <div class="controls__range">

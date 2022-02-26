@@ -1,24 +1,58 @@
+'use strict';
+
+// Dday
+const ddayForm = document.querySelector('.add__Dday form');
+const ddayInputYear = ddayForm.querySelector('#input_year');
+const ddayInputMonth = ddayForm.querySelector('#input_month');
+const ddayInputDay = ddayForm.querySelector('#input_day');
+
+let date = new Date();
+let currentDate = new Date(
+  date.getFullYear,
+  date.getMonth,
+  date.getDate,
+  date.getHours,
+  date.getMinutes,
+  date.getSeconds
+);
+console.log(currentDate);
+
+function handleDday(event) {
+  event.preventDefault();
+  // let inputDate = new Date(
+  //   ddayInputYear,
+  //   ddayInputMonth,
+  //   ddayInputDay,
+  //   0,
+  //   0,
+  //   0
+  // );
+
+  console.log(inputDate, currentDate);
+}
+ddayForm.addEventListener('submit', handleDday);
+
+clock;
+const time = document.querySelector('#clock');
+
 function makeSame(t) {
   const two = t.toString().padStart(2, '00');
   return two;
 }
 
-// clock
-const time = document.querySelector('#clock');
-
-function now() {
+function nowTime() {
   const now = new Date();
   const h = now.getHours();
   const m = now.getMinutes();
   const s = now.getSeconds();
   time.innerHTML = `${makeSame(h)} : ${makeSame(m)} : ${makeSame(s)}`;
 }
-now();
-setInterval(now, 1000);
+nowTime();
+setInterval(nowTime, 1000);
 
 // timer
 const timer = document.querySelector('#timer_time');
-const btns = document.querySelector('.timer_btn');
+const btns = document.querySelector('.timer_btns');
 let hours = 0;
 let minutes = 0;
 let seconds = 0;

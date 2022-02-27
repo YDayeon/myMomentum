@@ -6,7 +6,7 @@ https://ydayeon.github.io/myMomentum/
 ## 페이지 구성
 Login / Home
 <Log-in_screen>
-![login](https://user-images.githubusercontent.com/88532969/155885812-0b7af26a-a47b-40c2-abb4-ca581ac050a1.PNG)
+![Uploading login.PNG…]()
 
 ## 프로젝트 목적
 1. 적절한 시맨틱 태그 활용

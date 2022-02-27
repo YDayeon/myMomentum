@@ -4,7 +4,19 @@ CSS의 여러 기능(Grid)과 JavaScript를 이용한 여러 간단한 small pro
 ## Link
 https://ydayeon.github.io/myMomentum/
 ## 페이지 구성
-Login / Home
+- Log-in_screen
+<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155885904-ff8d888c-1733-497d-ba07-aa7baa16f7ce.png" />
+- Home_screen (time)
+<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155885948-fbfc1018-03e3-49d4-88f0-9dc487ea2be2.PNG" />
+- Home-weather_screen
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886005-39c9dbb0-d05f-4b07-8b57-fd5c29e69e3e.PNG" />
+- Home-calculator_screen
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886021-6f486c33-f01f-4adb-aff8-9b3fb3da4d6a.PNG" />
+- Home-paint_screen
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886039-e5a08762-14f6-4250-b88f-734757dc19d7.PNG" />
+- Home-todo_screen
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886047-80c74862-9c89-4e92-b099-91567a69dd96.PNG" />
+
 ## 프로젝트 목적
 1. 적절한 시맨틱 태그 활용
 2. CSS 기능 최대한 활용 (실습을 통한 이해)

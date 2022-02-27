@@ -146,6 +146,7 @@ hr {
 }
 
 .screen__title {
+  margin-top: 30px;
   height: 32px;
   padding-top: 2px;
   display: flex;
@@ -232,6 +233,7 @@ hr {
   text-shadow: -1.5px -1.5px 2px var(--font-color-blue),
     1.5px 1.5px 2px var(--font-color-purple);
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .weather_head {

@@ -11,11 +11,11 @@ https://ydayeon.github.io/myMomentum/
 - Home-weather_screen
 <img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155886005-39c9dbb0-d05f-4b07-8b57-fd5c29e69e3e.PNG" />
 - Home-calculator_screen
-<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155886021-6f486c33-f01f-4adb-aff8-9b3fb3da4d6a.PNG" />
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886021-6f486c33-f01f-4adb-aff8-9b3fb3da4d6a.PNG" />
 - Home-paint_screen
-<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155886039-e5a08762-14f6-4250-b88f-734757dc19d7.PNG" />
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886039-e5a08762-14f6-4250-b88f-734757dc19d7.PNG" />
 - Home-todo_screen
-<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155886047-80c74862-9c89-4e92-b099-91567a69dd96.PNG" />
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886047-80c74862-9c89-4e92-b099-91567a69dd96.PNG" />
 
 ## 프로젝트 목적
 1. 적절한 시맨틱 태그 활용

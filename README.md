@@ -5,10 +5,8 @@ CSS의 여러 기능(Grid)과 JavaScript를 이용한 여러 간단한 small pro
 https://ydayeon.github.io/myMomentum/
 ## 페이지 구성
 Login / Home
-<Home>
-  Time![home_time](https://user-images.githubusercontent.com/88532969/155885517-66344c4f-7793-40f6-82d7-49aba246761b.PNG)
-
-  
+<Log-in>
+![Uploading login.jpg…]()
 
 ## 프로젝트 목적
 1. 적절한 시맨틱 태그 활용

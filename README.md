@@ -5,7 +5,7 @@ CSS의 여러 기능(Grid)과 JavaScript를 이용한 여러 간단한 small pro
 https://ydayeon.github.io/myMomentum/
 ## 페이지 구성
 - Log-in_screen
-![login](https://user-images.githubusercontent.com/88532969/155885904-ff8d888c-1733-497d-ba07-aa7baa16f7ce.png)
+<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155885904-ff8d888c-1733-497d-ba07-aa7baa16f7ce.png" />
 - Home_screen (time)
 ![home_time](https://user-images.githubusercontent.com/88532969/155885948-fbfc1018-03e3-49d4-88f0-9dc487ea2be2.PNG)
 - Home-weather_screen

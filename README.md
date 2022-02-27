@@ -9,7 +9,7 @@ https://ydayeon.github.io/myMomentum/
 - Home_screen (time)
 <img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155885948-fbfc1018-03e3-49d4-88f0-9dc487ea2be2.PNG" />
 - Home-weather_screen
-<img width="50%" height="50%" src="https://user-images.githubusercontent.com/88532969/155886005-39c9dbb0-d05f-4b07-8b57-fd5c29e69e3e.PNG" />
+<img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886005-39c9dbb0-d05f-4b07-8b57-fd5c29e69e3e.PNG" />
 - Home-calculator_screen
 <img width="30%" height="30%" src="https://user-images.githubusercontent.com/88532969/155886021-6f486c33-f01f-4adb-aff8-9b3fb3da4d6a.PNG" />
 - Home-paint_screen

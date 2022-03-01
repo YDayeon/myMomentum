@@ -1,6 +1,5 @@
 const buttons = document.querySelector('.buttons');
 const clickButton = document.querySelector('.clicked');
-const main = document.querySelector('.main');
 const screens = document.querySelectorAll('.screen');
 
 let preButton = clickButton;

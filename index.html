@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>myMomentum</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,15 +24,15 @@
   </div>
   <div class="home hidden">
     <header class="greeting"></header>
-    <div class="buttons">
-      <button class="button clicked" id="time"><img id="time" class="btnImg" src="imgs/timer.png" alt="time"></button>
-      <button class="button" id="weather"><img id="weather" class="btnImg" src="imgs/weather.png"
-          alt="weather"></button>
-      <button class="button" id="calculator"><img id="calculator" class="btnImg" src="imgs/calculator.png"
-          alt="calculator"></button>
-      <button class="button" id="paint"><img id="paint" class="btnImg" src="imgs/paint.png" alt="paint"></button>
-    </div>
     <div class="main">
+      <div class="buttons">
+        <button class="button clicked" id="time"><img id="time" class="btnImg" src="imgs/timer.png" alt="time"></button>
+        <button class="button" id="weather"><img id="weather" class="btnImg" src="imgs/weather.png"
+            alt="weather"></button>
+        <button class="button" id="calculator"><img id="calculator" class="btnImg" src="imgs/calculator.png"
+            alt="calculator"></button>
+        <button class="button" id="paint"><img id="paint" class="btnImg" src="imgs/paint.png" alt="paint"></button>
+      </div>
       <div class="screen time_screen" id="time">
         <div id="Dday" class="hidden">
           <div class="add__Dday">
@@ -73,30 +75,30 @@
         </div>
       </div>
       <div class="screen weather_screen hidden" id="weather">
-        <h1>Now weather</h2>
-          <div class="weather_head">
-            <img class="weather_icon" />
-            <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
-            <img src="imgs/humidity.png" class="head_icon" /><span></span>
+        <h1>Now weather</h1>
+        <div class="weather_head">
+          <img class="weather_icon" />
+          <img src="imgs/high-temperature.png" class="head_icon" /><span></span>
+          <img src="imgs/humidity.png" class="head_icon" /><span></span>
+        </div>
+        <div class="temperature">
+          <div class="screen__title">
+            <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
+            Temperature
           </div>
-          <div class="temperature">
-            <div class="screen__title">
-              <img class="instruction_icon" src="imgs/temp.png" alt="temperature">
-              Temperature
-            </div>
-            <h4>Feels like <mark></mark></h4>
-            <h4>Max-Temperature <mark></mark></h4>
-            <h4>Min-Temperature <mark></mark></h4>
+          <h4>Feels like <mark></mark></h4>
+          <h4>Max-Temperature <mark></mark></h4>
+          <h4>Min-Temperature <mark></mark></h4>
+        </div>
+        <div class="wind">
+          <div class="screen__title">
+            <img class="instruction_icon" src="imgs/wind.png" alt="">
+            <div> Wind</div>
           </div>
-          <div class="wind">
-            <div class="screen__title">
-              <img class="instruction_icon" src="imgs/wind.png" alt="">
-              <div> Wind</div>
-            </div>
-            <h4>Degree <mark></mark></h4>
-            <h4>Speed <mark></mark>
-            </h4>
-          </div>
+          <h4>Degree <mark></mark></h4>
+          <h4>Speed <mark></mark>
+          </h4>
+        </div>
       </div>
       <div class="screen calculator_screen hidden" id="calculator">
         <div class="calculator__container">

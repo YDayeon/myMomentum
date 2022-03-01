@@ -485,11 +485,37 @@ mark {
 
 @media (min-width: 1600px) {
   :root {
-    --font-size-large: 60px;
+    --font-size-large: 80px;
     --font-size-medium: 60px;
-    --font-size-small: 25px;
+    --font-size-small: 30px;
   }
 
+  /* log-in page */
+  .askName {
+    margin-top: 280px;
+    margin-bottom: 10px;
+    font-size: var(--font-size-large);
+  }
+
+  #im {
+    font-size: var(--font-size-medium);
+  }
+
+  .inputName {
+    height: 80px;
+    width: 700px;
+    font-size: var(--font-size-medium);
+  }
+
+  .enterBtn {
+    width: 140px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: var(--font-size-small);
+  }
+
+  /* Home */
   .screen__title {
     height: 40px;
     padding-top: 4px;

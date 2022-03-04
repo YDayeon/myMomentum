@@ -70,11 +70,13 @@ function handleCalculator(event) {
     // calculateAll(resultValue);
     stackArr.push(input);
     backwardOperator();
+    input = '';
   } else if (inputID === 'C') {
     stackArr = [];
     resultValue = '';
     formula.innerHTML = resultValue;
     result.innerHTML = '';
+    input = '';
   } else if (inputClass === 'num') {
     resultValue += inputID;
     input += inputID;

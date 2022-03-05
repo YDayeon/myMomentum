@@ -67,9 +67,10 @@ function handleCalculator(event) {
   const inputID = event.target.id;
   const inputClass = event.target.classList[0];
   if (inputID === 'calculate') {
-    // calculateAll(resultValue);
     stackArr.push(input);
     backwardOperator();
+    stackArr = [];
+    resultValue = '';
     input = '';
   } else if (inputID === 'C') {
     stackArr = [];
@@ -78,6 +79,7 @@ function handleCalculator(event) {
     result.innerHTML = '';
     input = '';
   } else if (inputClass === 'num') {
+    result.innerHTML = '';
     resultValue += inputID;
     input += inputID;
     formula.innerHTML = resultValue;
